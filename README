@@ -1,0 +1,5 @@
+Quick Stats Logging
+
+Add stats_gathering to /etc/init.d/ and everything else to /usr/bin
+
+Logs go to /var/log/stats
