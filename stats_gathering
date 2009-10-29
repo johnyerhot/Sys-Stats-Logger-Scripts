@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/usr/local/bin/vmstat_monitor &
+/usr/local/bin/iostat_monitor &
+/usr/local/bin/processes &
+
+exit 0

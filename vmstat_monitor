@@ -1,0 +1,3 @@
+#!/bin/sh
+
+vmstat -n 5 | perl -n -e 'BEGIN {select(STDOUT); $| = 1;} next if /^(procs| r)/; print localtime() . " " . $_;' | /usr/bin/cronolog /var/log/stats/vmstat-logs/%Y/%m/%d.log

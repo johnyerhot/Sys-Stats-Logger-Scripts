@@ -1,0 +1,3 @@
+#!/bin/sh
+
+iostat -d -k -t -x 5 | /usr/bin/cronolog /var/log/stats/iostat-logs/%Y/%m/%d.log
